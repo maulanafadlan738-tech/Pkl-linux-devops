@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Fadlan Maulana</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #cbd5f5;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 6px;
+        }
+
+        .profile-info p {
+            margin-bottom: 8px;
+        }
+
+        .skills ul {
+            list-style: none;
+        }
+
+        .skills li {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 10px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            font-size: 14px;
+    }
+
+        .about p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .links a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .links a:hover {
+            background-color: #0284c7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fadlan Maulana</h1>
+    <p>IT Enthusiast · Web & Server</p>
+</header>
+
+<main>
+
+    <section class="profile-info">
+        <h2>Profil</h2>
+        <p><strong>Sekolah / Kampus:</strong> SMK Negeri 4 Padalarang </p>
+        <p><strong>Kota Domisili:</strong> Bandung Barat</p>
+    </section>
+
+    <section class="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya memiliki ketertarikan besar pada bidang teknologi informasi,
+            khususnya pengelolaan server dan pengembangan web.
+            Saat ini fokus mempelajari Linux, web server, dan dasar DevOps.
+            Target karier saya adalah menjadi profesional IT yang berpengaruh.
+        </p>
+    </section>
+
+    <section class="skills">
+        <h2>Skill</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Linux ubuntu</li>
+            <li>Git</li>
+            <li>Linux redhat</li>
+	    <li>Linux debiant</li>
+            <li>Network</li>
+            <li>Mikrotik</li>
+            <li>Nginx / Apache</li>
+        </ul>
+    </section>
+
+    <section class="links">
+        <h2>Akun Profesional</h2>
+        <a href="https://github.com/maulanafadlan738-tech/Pkl-linux-devops.git" target="_blank" rel="noopener noreferrer">
+            GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/fadlan-maulana-4a278a343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Fadlan Maulana 👨🏻‍💻 
+</footer>
+
+</body>
+</html>
