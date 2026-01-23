@@ -1,0 +1,18 @@
+name: Deploy Index HTML
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Deploy index.html
+        run: |
+          sudo cp index.html /var/www/html/index.html
