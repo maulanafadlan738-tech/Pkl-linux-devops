@@ -16,5 +16,4 @@ jobs:
       - name: Deploy index.html
         run: |
              cp index.html /var/www/html/index.html
-             chown www-data:www-data /var/www/html/index.html
              chmod 644 /var/www/html/index.html
