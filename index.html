@@ -1,284 +1,176 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="id">
-    <head>
-        <title>FADLAN MAULANA</title>
-        <link rel="stylesheet" href="style.css">
-         <link rel="icon" type="image/x-icon" href="assets/linux.png">
-         <meta name="Keywords" content="Html, Css">
-         <meta name="author" content="Fadlan Maulana">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-	<style>
-		    body {
-    font-family:monospace; 
-    background-image: url('assets/Атака\ Титанов\ обои.jpg'); 
-    background-attachment:fixed; 
-    background-position: center; 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    color:white;    
-    margin: 0;
-    padding: 0;
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Fadlan Maulana!</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #cbd5f5;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 6px;
+        }
+
+        .profile-info p {
+            margin-bottom: 8px;
+        }
+
+        .skills ul {
+            list-style: none;
+        }
+
+        .skills li {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 10px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            font-size: 14px;
     }
 
-    main {
-    width: 900px;
-    padding: 30px;
-    margin: 30px auto;
-    background: white;
-    border-radius: 10px;
-    font-family:monospace;
-    border: 5px double black;
-    }
-   
-   .F {
-    color:black; 
-    background-color:white;  
-    font-size: 15px; 
-    padding: 20px; 
-    margin:auto; 
-    text-align: center; 
-    border-radius: 10px;
-    border-style: solid;
-    font-family: sans-serif;
-    position: relative;
-    }
+        .about p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
 
-    .F img {
-        border-radius: 10px;
-        border: 1px solid;
-        position: absolute;
-        top: 15px;
-        right: 5px;
-    }
+        .links a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
 
-   .F p {
-    font-size: 15px;
-    }
+        .links a:hover {
+            background-color: #0284c7;
+        }
 
-    .F button {
-    background-color: black;
-    color: white;
-    }
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            color: #64748b;
+            font-size: 14px;
+        }
 
-    .F button:hover {
-    cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-3px);
-    }
-
-    .profil, .about, .skill, .habbit {
-        background-color:lightblue;
-        border-radius: 10px;
-        color: black;
-        padding: 30px;
-        font-size: 15px;
-        flex: 1;
-        margin-right: 5px;
-    }
-     
-    .satu, .dua {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    flex: 1;
-    }
-
-    .profil:hover, .about:hover, .skill:hover, .habbit:hover, .form:hover, img:hover {
-        box-shadow: 0 10px 10px black;
-        transform: translateY(-10px);
-    }
-    
-    .skill li, .habbit li {
-    margin: 10px;
-    list-style-type:none;
-    border: 2px solid black;
-    font-size: 20px;
-
-    }
-
-   .form {
-    background-color:lightblue;
-        border-radius: 10px;
-        color: black;
-        padding: 30px;
-        font-size: 15px;
-    }
-
-   .a h2 {
-    color: black;
-    }
-
-    .a ul {
-    display: flex;
-    list-style-type: none; 
-    justify-content:center;
-    align-items: center;
-    color:black;
-    text-align: center;
-    gap: 30px;
-    }
-        
-    
-    .a img:hover {
-    box-shadow: 0 10px 10px black;
-    transform: translateY(-5px);
-    border-radius: 10px;
-    padding: 5px;
-    }
-
-    li button:hover {
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    }
-
-    .blog {
-    padding: 10px;
-    background-color: black;
-    color:white;
-    cursor: pointer;
-    }
-   
-    .fo {
-    text-align: center;
-    background: white;
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
-    border-style: solid;
-    font-size: 15px;
-    }
-	</style>
-
-
+        @media (max-width: 900px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
 <body>
 
-        <div class="F">
-            <h1 title="this is header">Fadlan Maulana <img src="assets/snbp.jpeg" alt="Foto Fadlan Maulana" width="100" height="115" title="Gambar Fadlan Maulana"> </h1>
-            <p> Sysadmin & IT Enthusiast</p>
-            <button type="button" onclick="myFunction()">Call name</button>
-            
-            <p id="ALAN">Lan</p>
-            <script>
-                function myFunction() {
-                    document.getElementById('ALAN').innerHTML ='Alann!' 
-                }
-            </script>
-        </div>
+<header>
+    <h1>Fadlan Maulana!</h1>
+    <p>IT Enthusiast · Web & Server</p>
+</header>
 
-<main>   
-    
-<div class="satu">
-        
+<main>
 
-        <div class="about">
-            <h2 title="About"><ins>Tentang saya</ins></h2>
-                <p>
-                    Saya memiliki ketertarikan besar pada bidang teknologi informasi,<br>
-                    khususnya pengelolaan server dan pengembangan web.<br>
-                    Saat ini fokus mempelajari Linux, web server, dan dasar DevOps.<br>
-                    Target karier saya adalah menjadi profesional IT yang berpengaruh<br>
-                </p>
-            </div>
-        <div class="profil">
-            <h2 title="Profil"><b><ins>Profil</ins></b></h2>
-                <pre><b> Nama Sekolah    :</b> SMKN 4 PADALARANG</pre>
-                <Pre><b> Kelas           :</b> XII</Pre>
-                <pre><b> Jurusan         :</b> TKJ(ACP)</pre>
-                <Pre><b> Mapel           :</b> HTML + CSS</Pre>
-        </div>
-    </div>    
-    
-<div class="dua">
-        <div class="skill">
-            <h2 title="Skill"><strong><ins>Skill</ins></strong></h2><br>
-                <ul>
-                    <li>Sysadmin</li>
-                    <li>DevOps</li>
-                    <li>Html</li>
-                    <li>CSS</li> 
-                    <li>Gitbash/Github</li> 
-                    <li>Linux 
-                    <ul>
-                        <li>Ubuntu</li> 
-                        <li>Debian </li>
-                        <li>Alma</li>
-                        <li>Redhat</li>
-                    </ul> 
-                </ul>
-            </div>        
+    <section class="profile-info">
+        <h2>Profil</h2>
+        <p><strong>Sekolah / Kampus:</strong> SMK Negeri 4 Padalarang </p>
+        <p><strong>Kota Domisili:</strong> Bandung Barat</p>
+    </section>
 
-        <div class="habbit">
-                <h2 title="Hobby"><strong><ins>Hobby atau kebiasaan</ins></strong></h2>
-                <ul>
-                    <li>Sepak Bola</li>
-                    <li>Bermain Game</li>
-                    <li>Menonton Movie</li>
-                    <li>Belajar Linux</li>   
-                </ul>
-            </div>
-    </div>        
+    <section class="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya memiliki ketertarikan besar pada bidang teknologi informasi,
+            khususnya pengelolaan server dan pengembangan web.
+            Saat ini fokus mempelajari Linux, web server, dan dasar DevOps.
+            Target karier saya adalah menjadi profesional IT yang berpengaruh.
+        </p>
+    </section>
 
-        <div class="form">
-            <h2 title="Form"><strong><ins>FORM</ins></strong></h2>
-                <span>Mohon mengisi Nama dan Email aktif untuk data pengunjung di bawah ini.</span>
-        <form action="input/nama dan email.txt">
-        Nama    : <input type="text" name="Fname"><br><br>
-        Tanggal : <input type="date" name="fanggal"><br><br>
-        Email   : <input type="email" name="Gmail"><br><br>
-        No Wa   : <input type="number" name="No"><br><br>
-        
-        <button type="submit">Submit Form</button>
-        <button type="reset">Reset Form</button>
-        </form>
-    </div>
-
-        
-        <div class="a">
-            <h2 style="text-align: center;" title="Media social"><strong><ins>Media social</ins></strong></strong></h2>
-
-            <ul>
-   <li><a href="https://www.instagram.com/fadlannmaulanaa_?igsh=MWZwNjBsYXUwYmV2dQ==" target="_blank" rel="noopener noreferrer" title=" Click to visit my Instagram">
-    <img src="assets/instagram.png" alt="Instagram Image" width="50px" height="50px" onclick="igalert()"></a>
-        <script>
-    function igalert() {
-    alert ("Do you sure you want to continue to Instagram?");
-   } 
-        </script>
-   <p>Instagram</p></li>
-
-
-   <li><a href="https://www.linkedin.com/in/fadlan-maulana-4a278a343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" title=" Click to visit my Linkedlin">
-    <img src="assets/linkedin.png" alt="Image Linkedlin" width="50px" height="50px" onclick="linkalert()"></a>
-        <script>
-    function linkalert() {
-    alert ("Do you sure you want to continue to Linkedlin?");
-    }   
-        </script>
-            <p>Linkedlin</p></li>
-
-
-   <li><a href="https://github.com/maulanafadlan738-tech/Pkl-linux-devops.git" target="_blank" rel="noopener noreferrer" title="Click to visit my Github repository">
-    <img src="assets/github.png" alt="Github image" width="50px" height="50px" onclick="gitalert()"></a>
-        <script>
-        function gitalert() {
-        alert ("Do you sure you want to continue to Github?");
-        }
-         </script>          
-            <p>Github</p></li><br>
-
-         <li><a href="https://fadlanxiacp.blogspot.com/" target="_blank" rel="noopener noreferrer">
-            <button class="blog"  title="Click to visit my Blogger"  onclick="alert('Do you sure yo want continue to blogger?')" style="border-radius: 10px;">see more about my Blogger</button></a></li>     
-       <!--<iframe src="https://fadlanxiacp.blogspot.com/" height="200" width="300" title="Blogger Alan" style="border: none; border-radius: 10px;">View more Click the button</iframe>-->
+    <section class="skills">
+        <h2>Skill</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Linux ubuntu</li>
+            <li>Git</li>
+            <li>Linux redhat</li>
+	    <li>Linux debiant</li>
+            <li>Network</li>
+            <li>Mikrotik</li>
+            <li>Nginx / Apache</li>
         </ul>
+    </section>
 
-    </div>    
+    <section class="links">
+        <h2>Akun Profesional</h2>
+        <a href="https://github.com/maulanafadlan738-tech/Pkl-linux-devops.git" target="_blank" rel="noopener noreferrer">
+            GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/fadlan-maulana-4a278a343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+        </a>
+    </section>
+
 </main>
-</body>
-  <section class="fo">
-    <footer>
-    © 2026 Fadlan Maulana 🐧 
-    </footer>  
-  </section> 
+
+<footer>
+    © 2026 Fadlan Maulana 👨🏻‍💻 
+</footer>
+
 </body>
 </html>
